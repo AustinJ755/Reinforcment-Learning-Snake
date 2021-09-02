@@ -113,7 +113,9 @@ public class SnakeControl {
         
         Scene scene = new Scene(root);
         Stage stage = new Stage();
+	stage.setOnCloseRequest(e->System.exit(0));
         stage.setScene(scene);
+		
         stage.show();
 
 		// define the mdp
